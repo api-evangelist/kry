@@ -1,0 +1,50 @@
+# KRY (Livi)
+
+> KRY is a Swedish digital healthcare provider headquartered in Stockholm, operating internationally under the Livi brand. It delivers primary care through video and chat consultations with doctors, nurses, psychologists, physiotherapists, dietitians and midwives via its iOS and Android apps, and also runs physical primary care centres, child health clinics and midwifery clinics across Sweden. KRY publishes no public developer program, partner API, SDK or MCP server — the platform is consumer- and clinician-facing.
+
+## About
+
+- [Website](https://www.kry.se): Main Swedish site (Kry brand).
+- [About KRY](https://www.kry.se/om/): Company overview and mission.
+- [How it works](https://www.kry.se/sa-fungerar-det/): How the digital care service works, registration, and high-cost protection.
+- [Press](https://www.kry.se/press/): Press room.
+- [News](https://www.kry.se/press/nyheter/): Dated company news and press releases.
+- [Partners](https://www.kry.se/samarbetspartners/): Clinical and commercial partner organisations.
+- [Careers](https://www.kry.se/karriar/business/lediga-tjanster/): Open business roles.
+
+## Brands and markets
+
+- Kry — Sweden (https://www.kry.se) and Norway (https://www.kry.no)
+- Livi — United Kingdom (https://www.livi.co.uk) and France (https://www.livi.fr)
+
+## Services
+
+- [Digital care](https://www.kry.se/digital-vard/): Video and chat consultations with doctors, nurses, psychologists, physiotherapists, dietitians and midwives.
+- [Care centres](https://www.kry.se/vardcentraler/): Physical primary care centres across Swedish regions.
+- [Prescriptions and certificates](https://www.kry.se/recept-och-intyg/receptfornyelse/): Prescription renewal, medical and sick-leave certificates.
+- [Tests and vaccination](https://www.kry.se/tester-och-vaccination/): Health checks, vaccinations and testing.
+- [Occupational health](https://www.kry.se/foretag/): Employer-facing occupational health services.
+- [Pricing and payment](https://www.kry.se/sa-fungerar-det/priser-betalning/): Consultation pricing and payment.
+- [Download the app](https://www.kry.se/ladda-ned/): iOS and Android apps — the primary sign-up path.
+
+## Security
+
+- [Vulnerability disclosure policy](https://www.kry.se/vulnerability-disclosure/): Responsible disclosure policy. Report to security@kry.se (PGP accepted). No reward-based bug bounty program is offered. Acknowledgement within 2 business days, validation within 15.
+- [Patient safety](https://www.kry.se/trygg-vard/patientsakerhet/): Clinical patient-safety work and quality assurance.
+
+## Legal
+
+- [Privacy policy (English)](https://www.kry.se/en/legal/privacy-policy/)
+- [End user licence agreement (English)](https://www.kry.se/en/legal/eula/)
+- [Cookie policy](https://www.kry.se/legal/cookies/)
+- [Integritetspolicy (Swedish)](https://www.kry.se/legal/integritetspolicy/)
+
+## API surface
+
+KRY has no public API. As of 2026-07-19 there is no developer portal, no API reference, no OpenAPI or AsyncAPI document, no SDK or package on npm/PyPI/Maven/NuGet/RubyGems, no CLI, no MCP server, no webhook catalog, and no `/.well-known/` discovery documents on any of the four brand hosts (kry.se, kry.no, livi.co.uk, livi.fr) — every probed path returned 404. Integrations with pharmacies, regions and partner providers are handled through private commercial agreements rather than a published developer program.
+
+## Artifacts in this repo
+
+- [Domain security](security/kry-domain-security.yml): Probed TLS/HSTS/DNS posture for kry.se.
+- [Vulnerability disclosure](security/kry-vulnerability-disclosure.yml): Structured capture of the published disclosure policy.
+- [Well-known probe](well-known/kry-well-known.yml): Recorded 404s across the /.well-known/ surface on all brand hosts.
