@@ -10,6 +10,17 @@ description: 'KRY is a Swedish digital healthcare provider headquartered in Stoc
   healthcare contracts. KRY publishes no public developer program, partner API or SDK surface; the platform
   is consumer- and clinician-facing, so this profile captures the company identity plus its legal and
   security surface rather than an API surface.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
